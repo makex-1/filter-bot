@@ -20,7 +20,6 @@ async def word(ctx):
 
 @client.event
 async def on_message(message):
-    log_channel = client.get_channel(config["channel"])
     if any(word in message.content for word in bannedwords):
         await message.delete()
         await message.channel.send(f"{message.author.mention} That Word Is Not Allowed To Be Used!")

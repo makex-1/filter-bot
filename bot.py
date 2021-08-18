@@ -7,7 +7,7 @@ with open("config.json") as f:
 
 client = commands.Bot(command_prefix = config["prefix"], case_insensitive = True)
 
-bannedwords = ["test"]
+bannedwords = [""]
 
 @client.event
 async def on_ready():
